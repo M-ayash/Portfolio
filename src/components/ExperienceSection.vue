@@ -3,28 +3,30 @@
     <div class="experience-title"><span>My skills</span></div>
 
     <div class="row experience-content">
-      <div class="col-2 experience-card">
+      <div class="col-2 experience-card" @click="$router.push('/')">
         <div class="experience-image">
-          <img src="@/assets/img/html_img.png" />
+          <img src="@/assets/img/form_builder.jpg" />
         </div>
         <div class="experience-info">
-          <p class="experience-category">HTML</p>
+          <p class="experience-category">Form Builder</p>
         </div>
       </div>
       <div class="col-2 experience-card">
         <div class="experience-image">
-          <img src="@/assets/img/css_img.png" />
+          <img src="@/assets/img/cv_with_CSS.jpg" />
         </div>
         <div class="experience-info">
-          <p class="experience-category">CSS</p>
+          <p class="experience-category">CV with Html en CSS</p>
         </div>
       </div>
       <div class="col-2 experience-card">
         <div class="experience-image">
-          <img src="@/assets/img/js-img.png" />
+          <img src="@/assets/img/weatherApp.jpg" />
         </div>
         <div class="experience-info">
-          <p class="experience-category">Javascript</p>
+          <p class="experience-category">
+            weather App
+          </p>
         </div>
       </div>
       <div class="col-2 experience-card">

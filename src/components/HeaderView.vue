@@ -10,6 +10,9 @@
         <li class="nav-item">
           <router-link to="/about" class="nav-link">about</router-link>
         </li>
+        <li class="nav-item">
+          <router-link to="/weather" class="nav-link">weather</router-link>
+        </li>
       </ul>
     </div>
   </header>
