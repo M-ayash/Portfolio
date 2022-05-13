@@ -3,15 +3,17 @@
     <div class="experience-title"><span>My skills</span></div>
 
     <div class="row experience-content">
-      <div class="col-2 experience-card" @click="$router.push('/')">
-        <div class="experience-image">
-          <img src="@/assets/img/form_builder.jpg" />
-        </div>
-        <div class="experience-info">
-          <p class="experience-category">Form Builder</p>
-        </div>
-      </div>
       <div class="col-2 experience-card">
+        <a href="https://moutazgit.github.io/">
+          <div class="experience-image">
+            <img src="@/assets/img/form_builder.jpg" />
+          </div>
+          <div class="experience-info">
+            <p class="experience-category">Form Builder</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-2 experience-card" @click="this.$router.push('/about')">
         <div class="experience-image">
           <img src="@/assets/img/cv_with_CSS.jpg" />
         </div>
@@ -19,43 +21,42 @@
           <p class="experience-category">CV with Html en CSS</p>
         </div>
       </div>
-      <div class="col-2 experience-card">
+      <div class="col-2 experience-card" @click="this.$router.push('/weather')">
         <div class="experience-image">
           <img src="@/assets/img/weatherApp.jpg" />
         </div>
         <div class="experience-info">
-          <p class="experience-category">
-            weather App
-          </p>
+          <p class="experience-category">weather App</p>
         </div>
       </div>
       <div class="col-2 experience-card">
-        <div class="experience-image">
-          <img src="@/assets/img/vuejs_img.png" />
-        </div>
-        <div class="experience-info">
-          <p class="experience-category">Vuejs</p>
-        </div>
+        <a href="https://github.com/M-ayash/portfolio">
+          <div class="experience-image">
+            <img src="@/assets/img/portolio_wit_Vuejs.jpg" />
+          </div>
+          <div class="experience-info">
+            <p class="experience-category">portfolio with Vuejs <small>link to github</small></p>
+          </div>
+        </a>
       </div>
       <div class="col-2 experience-card">
         <div class="experience-image">
           <img src="@/assets/img/wp_img.png" />
         </div>
         <div class="experience-info">
-          <p class="experience-category">Wordpress</p>
+          <p class="experience-category">Wordpress theme from scratch</p>
         </div>
       </div>
       <div class="col-2 experience-card">
-        <iframe src="" frameborder="0"></iframe>
+        <p class="experience-category">coming soon...</p>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-
 export default {
-    components: { }
+  components: {},
 };
 </script>
 <style>
@@ -80,9 +81,13 @@ export default {
   border-radius: 10px;
   margin: 20px 40px;
   box-shadow: 5px 5px 5px 5px rgb(242, 245, 247);
+  cursor: pointer;
 }
 .experience-card:hover {
   transform: scale(1.1);
+}
+.experience-card a{
+text-decoration: none;
 }
 
 .experience-card:hover .experience-image {
@@ -99,7 +104,7 @@ export default {
   text-align: center;
 }
 @media (max-width: 400px) {
-  .experience-category{
+  .experience-category {
     font-size: 0.7em;
   }
 }
