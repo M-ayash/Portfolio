@@ -11,19 +11,18 @@
         />
         <button
           type="button"
-          @click="getResult(cityName)"
+          @click="getCityWeather(cityName)"
           class="btn bg-light p-2"
         >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <button
           type="button"
-          @click="getLocation()"
+          @click="getLocationWeather()"
           class="btn bg-light p-2 m-2"
         >
           <i class="fas fa-map-marker-alt"></i>
         </button>
-        <div class="error-msg">{{errorMsg}}</div>
       </div>
       <div class="weather-body" v-if="weather.name">
         <section class="location">
@@ -52,6 +51,7 @@
           <div></div>
         </div>
       </div>
+      <div v-else class="error-msg">{{ errorMsg }}</div>
     </div>
   </div>
 </template>
@@ -61,37 +61,37 @@ export default {
   data() {
     return {
       weather: {},
-      forecast: {},
       api: {
         key: "b0a850e4b20d81310003353b66ffe05a",
         base: "https://api.openweathermap.org/data/2.5/",
       },
-      cityName: "",
+      cityName: "Arnhem",
       errorMsg: null,
     };
   },
   created() {
-    this.getResult("Arnhem");
+    this.getCityWeather()
   },
   methods: {
-    getResult(city) {
-      if (city) {
-        let RequestURL = `${this.api.base}weather?q=${city}&units=metric&APPID=${this.api.key}`;
-        this.fetchData(RequestURL);
+    
+    getCityWeather() {
+      this.weather = {};
+      if (this.cityName) {
+        this.fetchData(`${this.api.base}weather?q=${this.cityName}&units=metric&APPID=${this.api.key}`);
       }
     },
-    getLocation() {
+    getLocationWeather() {
+      this.weather = {};
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(this.location, this.showError);
+        navigator.geolocation.getCurrentPosition(this.displayWeather, this.showError);
       } else {
         this.errorMsg = "Geolocation is not supported by this browser.";
       }
     },
-    location(position) {
+    displayWeather(position) {
       let lat = position.coords.latitude;
       let lon = position.coords.longitude;
-      let RequestURL = ` https://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${lat}&lon=${lon}&appid=${this.api.key}`;
-      this.fetchData(RequestURL);
+      this.fetchData(`${this.api.base}weather?&units=metric&lat=${lat}&lon=${lon}&appid=${this.api.key}`);
     },
     showError(error) {
       switch (error.code) {
@@ -110,20 +110,18 @@ export default {
       }
     },
     fetchData(URL) {
+       
       fetch(URL)
         .then((weather) => {
-          if (!weather.ok) {
-            throw Error(weather.statusText);
-          }
           return weather.json();
         })
-        .then(this.DisplayResult)
-        .catch(function(error) {
-        console.log(error);
-    });
+        .then(this.DisplayResult);
     },
     DisplayResult(weather) {
-      this.weather = weather;
+      if (weather.name) {
+        this.weather = weather;
+      }
+      if (weather.message) this.errorMsg = weather.message;
     },
 
     dateBuilder(d) {
@@ -253,5 +251,10 @@ export default {
   font-size: 24px;
   font-weight: 500;
   text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+.error-msg {
+  font-size: 15px;
+  color: red;
+  text-align: center;
 }
 </style>

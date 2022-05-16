@@ -4,7 +4,7 @@
 
     <div class="row experience-content">
       <div class="col-2 experience-card">
-        <a href="https://moutazgit.github.io/">
+        <a href="https://moutaz-bakier.github.io/">
           <div class="experience-image">
             <img src="@/assets/img/form_builder.jpg" />
           </div>
@@ -35,7 +35,9 @@
             <img src="@/assets/img/portolio_wit_Vuejs.jpg" />
           </div>
           <div class="experience-info">
-            <p class="experience-category">portfolio with Vuejs <small>link to github</small></p>
+            <p class="experience-category">
+              portfolio met Vuejs <small>(link to github)</small>
+            </p>
           </div>
         </a>
       </div>
@@ -48,7 +50,9 @@
         </div>
       </div>
       <div class="col-2 experience-card">
-        <p class="experience-category">coming soon...</p>
+        <div class="experience-info">
+          <p class="experience-category">coming soon...</p>
+        </div>
       </div>
     </div>
   </section>
@@ -86,15 +90,15 @@ export default {
 .experience-card:hover {
   transform: scale(1.1);
 }
-.experience-card a{
-text-decoration: none;
+.experience-card a {
+  text-decoration: none;
 }
 
 .experience-card:hover .experience-image {
   opacity: 0.9;
 }
 
-.experience-image img {
+.experience-image img{
   width: 100%;
 }
 .experience-category {
@@ -102,6 +106,10 @@ text-decoration: none;
   color: coral;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
+}
+.experience-category small {
+  display: block;
+  font-size: 15px;
 }
 @media (max-width: 400px) {
   .experience-category {
