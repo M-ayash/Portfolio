@@ -3,7 +3,7 @@
     <h3 class="logo"><a href="/">Mohammad Ayash</a></h3>
     <div class="header-menu d-print-none">
       <div class="logo-img"></div>
-      <ul class="nav nav-tabs justify-content-end">
+      <ul class="nav nav-tabs ">
         <li class="nav-item">
           <router-link to="/" class="nav-link">Home</router-link>
         </li>
@@ -42,5 +42,12 @@ header .logo a {
   header .logo a {
     color: rgb(57, 90, 135);
   }
+}@media (max-width: 480px){
+  header{
+    flex-direction: column;
+    width: 100%;   
+  }
+
+  
 }
 </style>

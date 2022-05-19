@@ -20,6 +20,6 @@ export default {
   background-size: cover;
   background-position: sticky;
   background-attachment: fixed;
-  background-color: blue;}
+  }
 
 </style>

@@ -24,7 +24,6 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: rgb(101, 157, 243);
   overflow: hidden;
 }
 @media (max-width: 810px) {

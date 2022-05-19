@@ -1,6 +1,6 @@
 <template>
   <section class="row main-page" id="main-page">
-    <ul class="nav justify-content-end">
+    <ul class="nav ">
       <li class="nav-item">
         <button @click="goto('my-skills')" class="btn btn-light m-4">
           My Skills
@@ -16,7 +16,7 @@
       </li>
     </ul>
 
-    <div class="col-12 col-md-6 main-parg mt-5">
+    <div class="col-12 col-md-6 main-parg">
       <h5>Hello I am</h5>
       <h1>Mohammad</h1>
       <h3>Front-end Developer</h3>
@@ -89,6 +89,10 @@ export default {
   align-items: center;
   justify-content: space-evenly;
 }
+.main-page ul.nav{
+  justify-content: end;
+
+}
 .main-parg {
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -124,6 +128,7 @@ export default {
 .btn-contact {
   font-size: 20px;
   padding: 20px 50px;
+  border-radius: 5%;
 }
 .btn-scroll-top {
   position: fixed;
@@ -165,7 +170,6 @@ export default {
   }
   @media (max-width: 576px) {
     .main-page {
-      padding: 20px;
       padding-top: 6em;
     }
   }

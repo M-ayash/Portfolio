@@ -1,6 +1,6 @@
 <template>
   <section class="contact" id="contact">
-    <div class="content m-2">
+    <div class="contact-content m-2">
       <h2 class="contact-title">Contact me with</h2>
       <div class="icon">
         <i class="fas fa-envelope"></i>
@@ -18,8 +18,7 @@ export default {};
 <style>
 .contact {
   font-weight: bold;
-  text-shadow: 5px 5px 10px #eef7ee;
-  background-color: rgb(101, 157, 243);
+  background-color: rgba(245, 244, 237, 0.358);
 }
 .contact-title {
   width: 25%;
@@ -30,6 +29,7 @@ export default {};
   font-weight: bold;
   color: rgb(237, 239, 245);
   text-align: center;
+  border-radius: 5%;
 }
 .contact-content {
   margin: 20px;
@@ -40,15 +40,30 @@ export default {};
 }
 .contact .info h3 {
   display: inline-block;
-  color: #000;
+  color: rgb(1, 5, 51);
 }
 
-.contact .info p {
+ .info p {
   font-size: 1.5em;
+  padding: 10px;
 }
 @media (max-width: 768px) {
   .contact {
     text-align: center;
+  }
+  .info p{
+    font-size: 2em;
+    padding: 2px;
+  }
+  
+}
+@media (max-width: 576px) {
+  .contact-title{
+    width: 90%;
+  }
+  .info p{
+    font-size: 1.3em;
+    padding: 2px;
   }
 }
 </style>
