@@ -1,59 +1,60 @@
 <template>
   <div class="CV">
+    <div class="cv-title">
+      <h1 class="left-title">Mohammad</h1>
+      <h1 class="right-title">Ayash</h1>
+    </div>
     <section class="cv-left">
-      <div class="header-left">
-        <h1 class="left-title">Mohammad</h1>
-        <div class="cv-img">
-          <img src="@/assets/img/main-img.jpg" alt="Mohammad Ayash" class="" />
-          <p class="description p-3">
-            Ik ben een webontwikkelaar met frontend ervaring. Kennis van HTML,
-            CSS, Javascript, Bootstrap, Wordpress Vuejs python en Java .
-          </p>
-        </div>
-        <hr />
-        <div class="activite">
-          <h3>ACTIVITEITEN EN INTERESSES</h3>
-          <ul>
-            <li>Lezen</li>
-            <li>Wandelen</li>
-            <li>voetbal</li>
-            <li>programmeren</li>
-          </ul>
-        </div>
-        <div class="skills">
-          <h3>VAARDIGHEDEN</h3>
-          <ul>
-            <li>
-              <span>front-end</span>
-              <div class="progress">
-                <span class="progress-bar bg-info" style="width: 80%">80%</span>
-              </div>
-            </li>
-            <li>VueJs
-              <div class="progress">
-                <span class="progress-bar bg-info" style="width: 70%">70%</span>
-              </div>
-            </li>
-            <li>wordpress
-              <div class="progress">
-                <span class="progress-bar bg-info" style="width: 60%">60%</span>
-              </div>
-            </li>
-            <li>software developer
-              <div class="progress">
-                <span class="progress-bar bg-info" style="width: 60%">60%</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="cv-img">
+        <img src="@/assets/img/main-img.jpg" alt="Mohammad Ayash" class="" />
+        <p class="description p-3">
+          Ik ben een webontwikkelaar met frontend ervaring. Kennis van HTML,
+          CSS, Javascript, Bootstrap, Wordpress Vuejs python en Java .
+        </p>
+      </div>
+      <hr />
+      <div class="activite">
+        <h3>ACTIVITEITEN EN INTERESSES</h3>
+        <ul>
+          <li>Lezen</li>
+          <li>Wandelen</li>
+          <li>voetbal</li>
+          <li>programmeren</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>VAARDIGHEDEN</h3>
+        <ul>
+          <li>
+            <span>front-end</span>
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 80%">80%</span>
+            </div>
+          </li>
+          <li>
+            VueJs
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 70%">70%</span>
+            </div>
+          </li>
+          <li>
+            wordpress
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 60%">60%</span>
+            </div>
+          </li>
+          <li>
+            software developer
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 60%">60%</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!---->
     <section class="cv-right p-3">
-      <div class="header-right">
-        <h1 class="right-title">Ayash</h1>
-        <h3 class="job-name">Front-end Developer</h3>
-      </div>
+      <h3 class="job-name">Front-end Developer</h3>
       <div class="personalia-details">
         <div class="email">
           <p><i class="fa-solid fa-envelope"></i> mohammadhd1987@gmail.com</p>
@@ -113,6 +114,30 @@
   min-height: 100vh;
   min-width: 100%;
 }
+.cv-title h1 {
+  display: inline-block;
+  width: 50%;
+  font: 4em sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 0;
+  background-color: #fff;
+  color: rgb(57, 90, 135);
+}
+.left-title {
+ 
+  
+}
+.right-title {
+ 
+}
+.job-name {
+  background-color: rgb(57, 90, 135);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+/*/////////////*/
 .cv-left {
   min-height: 100vh;
   width: 40%;
@@ -130,12 +155,7 @@
   max-width: 100%;
   height: 30vh;
 }
-.header-left h1 {
-  font: 4em sans-serif;
-  text-align: center;
-  font-weight: bolder;
-  color: #fff;
-}
+
 .description {
   font-size: 20px;
   text-align: justify;
@@ -154,21 +174,14 @@
   float: right;
 }
 
-/*///////////////*/
+/*/ //////////////*/
 
 .cv-right {
   width: 60%;
   float: left;
   color: rgb(57, 90, 135);
 }
-.right-title {
-  font: 4em sans-serif;
-  text-align: center;
-  font-weight: bolder;
-}
-.job-name {
-  text-align: center;
-}
+
 .personalia-details {
   padding: 20px;
 }
@@ -200,22 +213,13 @@
   color: gray;
   padding-left: 10px;
 }
-@media print{
- .cv{
-   min-height: 100%;
-   max-width: 100%;
- } 
- .cv-img img {
-   height: 20vh;
- }
-}
-@media (max-width: 768px) {
-  
-
-}
-@media (max-width: 576px) {
-.CV{
-    padding-top: 50px;
+@media print {
+  .cv {
+    min-height: 100%;
+    max-width: 100%;
+  }
+  .cv-img img {
+    height: 20vh;
   }
 }
 </style>

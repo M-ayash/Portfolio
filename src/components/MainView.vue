@@ -1,7 +1,5 @@
 <template>
-  <main class="main">
-    <router-view />
-  </main>
+  
 </template>
 <script>
 import ContactSection from "./ContactSection.vue";
@@ -12,4 +10,7 @@ export default {
 </script>
 
 <style>
+.main{
+  padding-top:4.5em;
+}
 </style>

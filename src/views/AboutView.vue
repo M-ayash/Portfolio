@@ -12,7 +12,7 @@ export default {
 </script>
 <style>
 .about{
-  padding-top: 60px;
+  padding-top: 10px;
 }
 @media (min-width: 1024px) {
   .about {

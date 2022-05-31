@@ -1,6 +1,6 @@
 <template>
   <div class="weatherApp">
-    <div class="weather">
+    <div class="weather pt-3">
       <div class="weather-header">
         <input
           type="search"
@@ -168,7 +168,6 @@ export default {
   background-position: center;
 }
 .weather {
-  padding: 20px;
   flex-direction: column;
   min-height: 100vh;
   background-image: linear-gradient(
@@ -257,15 +256,5 @@ export default {
   font-size: 15px;
   color: red;
   text-align: center;
-}
-@media (max-width: 768px) {
-  
-
-}
-@media (max-width: 576px) {
-.weather{
-  padding-top: 9em;
-  text-align: center;
-}
 }
 </style>
