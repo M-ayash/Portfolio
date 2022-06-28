@@ -17,8 +17,7 @@
     </div>
   </header>
 </template>
-<script>
-</script>
+<script></script>
 <style>
 header {
   min-height: 4em;

@@ -8,30 +8,37 @@ export default {
 <template>
   <div>
     <header-view />
-    <main class="main">
+    <div class="main">
       <router-view />
-    </main>
+    </div>
+    
     <footer-view />
   </div>
 </template>
 <style>
 #app {
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: 'Times New Roman', Times, sans-serif;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: rgb(101, 157, 243);
   overflow: hidden;
 }
-.main {
+.main{
   padding: 0;
   margin: 0;
-  padding-top: 4em;
+  padding-top: 4.5em;
 }
 @media (max-width: 810px) {
   #app {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+  
   }
+}
+  @media (max-width: 360px) {
+  #app {
+    font: 0.5em sans-serif;
+  }
+  
 }
 </style>

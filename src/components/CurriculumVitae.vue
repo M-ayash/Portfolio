@@ -57,7 +57,7 @@
       <h3 class="job-name">Front-end Developer</h3>
       <div class="personalia-details">
         <div class="email">
-          <p><i class="fa-solid fa-envelope"></i> mohammadhd1987@gmail.com</p>
+          <p><i class="fa-solid fa-envelope"></i> m.ayash@ictmaatwerk.com</p>
         </div>
         <div class="phone"></div>
         <div class="adress">
@@ -110,8 +110,8 @@
 
 <style>
 .CV {
+  display: block;
   background-color: #fff;
-  min-height: 100vh;
   min-width: 100%;
 }
 .cv-title h1 {
@@ -123,13 +123,6 @@
   margin-bottom: 0;
   background-color: #fff;
   color: rgb(57, 90, 135);
-}
-.left-title {
- 
-  
-}
-.right-title {
- 
 }
 .job-name {
   background-color: rgb(57, 90, 135);
@@ -212,6 +205,12 @@
 .opleiding p {
   color: gray;
   padding-left: 10px;
+}
+@media (max-width: 768px) {
+   .CV{
+    padding-top:10em;
+    width: 100%;
+  }
 }
 @media print {
   .cv {

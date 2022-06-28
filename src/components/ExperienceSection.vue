@@ -6,9 +6,6 @@
       <experience-card cardText="Form Builder" @click="goto('https://moutaz-bakier.github.io/')">
          <img src="@/assets/img/form_builder.jpg" />
       </experience-card>
-      <experience-card cardText="CV with Html en CSS" @click="this.$router.push('/about')">
-         <img src="@/assets/img/cv_with_CSS.jpg" />
-      </experience-card>
       <experience-card cardText="weather App"  @click="this.$router.push('/weather')">
          <img src="@/assets/img/weatherApp.jpg" />
       </experience-card>
@@ -16,10 +13,11 @@
          <img src="@/assets/img/portolio_wit_Vuejs.jpg" />
       </experience-card>
       <div class="experience-content">
-      <experience-card cardText="Wordpress theme from scratch" @click="goto('http://www.mayash.wp-concept.nl/website/')" >
+      <experience-card cardText="Wordpress " @click="goto('http://www.mayash.wp-concept.nl/website/')" >
          <img src="@/assets/img/wp_img.png" />
       </experience-card>
-      <experience-card cardText="Coming soon...">
+      <experience-card cardText="WordPress webshop" @click="goto('http://www.mayash.wp-concept.nl/webshop/')">
+        <img src="@/assets/img/wpshop_img.png" />
       </experience-card>
 
       </div>

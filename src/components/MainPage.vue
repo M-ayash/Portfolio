@@ -1,5 +1,5 @@
 <template>
-  <section class="main-page pt-3" id="main-page">
+  <section class="main-page" id="main-page">
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <button @click="goto('my-skills')" class="btn btn-light me-4">
@@ -48,9 +48,10 @@
       </div>
       <div class="main-img">
         <img
-          src="../assets/img/moon1.png"
-          alt="laptop"
-          class="rounded-circle"
+          src="../assets/img/laptop4.png"
+          alt="laptp"
+          width="500"
+         
         />
       </div>
       <div>
@@ -149,23 +150,16 @@ export default {
   border-radius: 10px;
 }
 .main-img {
-}
-.main-img img:hover {
+  display: flex;
+  align-items: center;
 
-  animation: rotation 40s linear 0s infinite forwards;
 }
-@keyframes rotation {
-  form {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(-360deg);
-  }
-}
-@media (max-width: 768px) {
+
+
+@media (max-width: 850px) {
   .main-page {
     margin: 5px;
-    padding: 10px;
+    padding: 40px;
     flex-direction: column;
   }
   .main-content {
@@ -194,7 +188,11 @@ export default {
     font-size: 20px;
   }
   .main-img {
+    display: block;
     text-align: center;
+  }
+  .main-img img{
+      width: 100%;
   }
   @media (max-width: 576px) {
     .main-page {
@@ -202,5 +200,13 @@ export default {
       padding-top: 6em;
     }
   }
+
+   @media (max-width: 360px) {
+    .main-page {
+      padding-top: 10em;
+    }
+    
+  }
+  
 }
 </style>
