@@ -40,7 +40,7 @@
           <li>
             wordpress
             <div class="progress">
-              <span class="progress-bar bg-info" style="width: 60%">60%</span>
+              <span class="progress-bar bg-info" style="width: 80%">80%</span>
             </div>
           </li>
           <li>
@@ -57,7 +57,7 @@
       <h3 class="job-name">Front-end Developer</h3>
       <div class="personalia-details">
         <div class="email">
-          <p><i class="fa-solid fa-envelope"></i> m.ayash@ictmaatwerk.com</p>
+          <p><i class="fa-solid fa-envelope"></i> mohammadhd1987@gmail.com</p>
         </div>
         <div class="phone"></div>
         <div class="adress">
