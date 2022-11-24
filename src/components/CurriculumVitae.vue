@@ -71,7 +71,18 @@
         <h2>WERK ERVARING</h2>
         <div>
           <h3>front-end developer</h3>
-          <p><span>ICTMaatwerk </span>|<span> 2021-heden</span></p>
+          <p><span>saleswizard </span>|<span> 2022-heden</span></p>
+          <ul>
+            <li>
+              Website gemaakt en beheerd met<br />
+               WordPress en PHP
+            </li>
+            <li>wordpress  ontwikkeld</li>
+          </ul>
+        </div>
+        <div>
+          <h3>front-end developer</h3>
+          <p><span>ICTMaatwerk </span>|<span> 2021-2022</span></p>
           <ul>
             <li>
               Website gemaakt en beheerd met<br />
@@ -84,14 +95,13 @@
       <div class="opleiding">
         <h2>OPLEIDING</h2>
         <div>
-          <h3>NT2 -Inburgering</h3>
-          <p><span>Rijnijssel-Arnhem </span>|<span> 2019-heden</span></p>
+          <h3>NT2-B1 diploma</h3>
+          <p><span>Rijnijssel-Arnhem </span>|<span> 2019-2022</span></p>
           <ul>
             <li>
-              Website gemaakt en beheerd met<br />
-              HTML,CSS,Javascript,php,Vuejs
+              NT2-B1
             </li>
-            <li>Wep Applicaties ontwikkel</li>
+            <li>inburgering diploma</li>
           </ul>
         </div>
         <div>

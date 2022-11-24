@@ -86,7 +86,7 @@ export default {
   left: 80%;
   }
   @media print {
-    .show-cv {
+    .show-cv ,.show-cv{
       display: none;
     }
   }
