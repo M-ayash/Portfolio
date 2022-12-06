@@ -19,12 +19,13 @@ export default {
 </script>
 <style>
 .experience-card {
-  background-color: rgba(244, 243, 223, 0.548);
-  max-width: 21%;
+  background-color: rgba(14, 13, 13, 0.647);
+  max-width: 28%;
   margin: 1em;
   padding: 1em;
   cursor: pointer;
   border-radius: 10%;
+
 }
 .experience-card:hover {
   transform: scale(1.1);
@@ -46,6 +47,7 @@ export default {
   color: coral;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
+  padding-top: 10px;
   
 }
 .experience-category small {

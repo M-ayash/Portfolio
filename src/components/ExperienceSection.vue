@@ -12,15 +12,18 @@
       <experience-card cardText="portfolio met Vuejs (link to github)" @click="goto('https://github.com/M-ayash/portfolio')">
          <img src="@/assets/img/portolio_wit_Vuejs.jpg" />
       </experience-card>
-      <div class="experience-content">
-      <experience-card cardText="Wordpress " @click="goto('http://www.mayash.wp-concept.nl/website/')" >
-         <img src="@/assets/img/wp_img.png" />
+      <experience-card cardText="Wordpress website" @click="goto('https://www.klusbedrijf-direct.nl/')" >
+         <img src="@/assets/img/klusbedrijf-direct.png" />
       </experience-card>
-      <experience-card cardText="WordPress webshop" @click="goto('http://www.mayash.wp-concept.nl/webshop/')">
-        <img src="@/assets/img/wpshop_img.png" />
+      <experience-card cardText="WordPress demo" @click="goto('https://wgv.one-sw.nl/')">
+        <img src="@/assets/img/wgv.png" />
       </experience-card>
-
-      </div>
+      <experience-card cardText="WordPress demo" @click="goto('https://xandra.one-sw.nl/')">
+        <img src="@/assets/img/xandra.png" />
+      </experience-card>
+      <experience-card cardText="WordPress demo" @click="goto('https://rentem.one-sw.nl/')">
+        <img src="@/assets/img/rentem.png" />
+      </experience-card>
       
     </div>
   </section>
@@ -57,7 +60,7 @@ export default {
   display: flex;
   margin: 20px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 

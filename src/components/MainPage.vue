@@ -19,7 +19,7 @@
         <h3>Front-end Developer</h3>
         <p>
           I am a web developer with frontend experience Knowledge of HTML, CSS,
-          Javascript Wordpress and Vuejs.
+          Javascript, PHP, Wordpress and Vuejs.
         </p>
         <div class="social-icons">
           <a
