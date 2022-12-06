@@ -39,6 +39,7 @@ export default {
 
 .experience-image img {
   width: 100%;
+  border-radius: 10%;
 }
 .experience-category {
   font-size: 20px;
