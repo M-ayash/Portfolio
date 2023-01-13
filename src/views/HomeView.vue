@@ -1,16 +1,14 @@
 <template>
   <div class="home">
-    <img src="@/assets/img/sky8.jpg" alt="" class="background-img" />
+    <!-- <img src="@/assets/img/sky8.jpg" alt="" class="background-img" /> -->
     
-    <div class="moon-img">
+    <!-- <div class="moon-img">
       <img src="../assets/img/moon1.png" alt="moon" class="rounded-circle" />
-    </div>
+    </div> -->
 
     
-    <div id="star0" class="star"></div>
+    <!-- <div id="star0" class="star"></div>-->
     <MainPage />
-    <ExperienceSection />
-    <ContactSection />
   </div>
 </template>
 <script>
@@ -34,10 +32,7 @@ export default {
 <style>
 .home {
   position: relative;
-  /*background: url("@/assets/img/sky8.jpg");*/
-  background-size: cover;
-  background-position: sticky;
-  background-attachment: fixed;
+ 
 }
 .background-img {
   position: fixed;

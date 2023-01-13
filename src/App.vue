@@ -10,8 +10,7 @@ export default {
     <header-view />
     <div class="main">
       <router-view />
-    </div>
-    
+    </div>  
     <footer-view />
   </div>
 </template>
@@ -22,12 +21,20 @@ export default {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 .main{
   padding: 0;
   margin: 0;
   padding-top: 4.5em;
+  background-image: radial-gradient(
+    farthest-corner,
+    #12d2e4,
+    #0929ca,
+    #3f3f5d,
+    #303040,
+    #333334
+  );
 }
 @media (max-width: 810px) {
   #app {

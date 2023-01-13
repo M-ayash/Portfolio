@@ -20,7 +20,7 @@
         {{ show ? "&#9747;" : "Mijn CV" }}
       </button>
     </div>
-    <img src="../assets/img/sky4.jpg" alt="" class="about-bg" />
+    <!-- <img src="../assets/img/sky4.jpg" alt="" class="about-bg" /> -->
     <CurriculumVitae v-if="show" />
   </div>
 </template>

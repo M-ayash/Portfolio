@@ -1,58 +1,59 @@
 <template>
   <section class="main-page" id="main-page">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <button @click="goto('my-skills')" class="btn btn-light me-4">
-          My Skills
-        </button>
-      </li>
-      <li class="nav-item">
-        <button @click="goto('contact')" class=" btn btn-contact me-4">
-          Contact
-        </button>
-      </li>
-    </ul>
     <div class="main-content">
-      <div class="main-parg">
-        <h5>Hello I am</h5>
-        <h1>Mohammad</h1>
-        <h3>Front-end Developer</h3>
-        <p>
-          I am a web developer with frontend experience Knowledge of HTML, CSS,
-          Javascript, PHP, Wordpress and Vuejs.
-        </p>
-        <div class="social-icons">
-          <a
-            class="fa-brands fa-twitter"
-            href="https://twitter.com/Mohammad_ay_87"
-          ></a>
-          <a
-            class="fa-brands fa-facebook"
-            href="https://www.facebook.com/mohammad.ayash.88"
-          ></a>
-          <a
-            class="fa-brands fa-linkedin"
-            href="https://www.linkedin.com/in/mohammad-ayash-465216231/"
-          ></a>
-          <a
-            class="fa-brands fa-instagram"
-            href="https://www.instagram.com/mohammad.ayash.88/"
-          ></a>
-          <a class="fa-brands fa-github" href="https://github.com/M-ayash"></a>
+      <nav id="nav-menu" class="nav-menu">
+        <div class="header-menu d-print-none">
+          <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+              <router-link to="/projects" class="nav-link">Projects</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link">About</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/contact" class="nav-link">Contact</router-link>
+            </li>
+          </ul>
         </div>
-        <div>
-          <a class="btn btn-contact m-4" @click="goto('contact')"
-            >Contact</a
-          >
+      </nav>
+      <div class="main-parg">
+        <h1><span></span>Developer</h1>
+        <p>
+          // I am a web developer with frontend experience Knowledge of HTML,
+          CSS, Javascript, PHP, Wordpress and Vuejs. //
+        </p>
+      </div>
+      <div class="right-block">
+        <h2>Hi, I am Mohammad</h2>
+        <h3>Front-end Developer</h3>
+        <div class="right-block-p">
+          <div class="right-block-circles">
+            <span></span><span></span><span></span>
+          </div>
+          <p>
+            //<br />
+            I am a web developer with frontend experience Knowledge of HTML,
+            CSS, Javascript, PHP, Wordpress and Vuejs.
+            <br />
+            //
+          </p>
         </div>
       </div>
-      <div class="main-img">
-        <img
-          src="../assets/img/laptop4.png"
-          alt="laptp"
-          width="500"
-         
-        />
+      <div class="laptop-block">
+        <div class="laptop-screen">
+          <img src="src\assets\img\code1.png" alt="code" />
+          <div class="top-screen"><span></span><span></span><span></span></div>
+          <p class="text-screen">
+            <i class="hand-wave-emoji"></i> I am Mohammad Ayash
+          </p>
+          <div class="bottom-screen">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="laptop-keyboard">
+          <img src="src\assets\img\laptop-keyboard.jpg" alt="keyboard" />
+        </div>
       </div>
       <div>
         <button
@@ -82,52 +83,67 @@ export default {
 .main-page {
   min-height: 100vh;
   min-width: 100%;
+  padding-top: 30px;
 }
 .main-content {
-  display: flex;
-  min-height: 90vh;
-  min-width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-
+  width: 70%;
+  margin: 0 0 0 20px;
+  border: 4px solid #000;
+  border-radius: 2%;
+  background-image: radial-gradient(
+    farthest-corner,
+    #12d2e4,
+    #0929ca,
+    #3f3f5d,
+    #303040,
+    #333334
+  );
+  padding-bottom: 4em;
+  position: relative;
+}
+.nav-tabs{
+  border: none !important;
+}
+.main-content .nav-tabs li a{
+  color: #fff;
 }
 .main-parg {
-  float: left;
-  width: 40%;
+  padding: 2em 4em;
   font-weight: bold;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  margin-bottom: 50px;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .main-parg h1 {
-  font-size: 100px;
-  color: rgb(151 204 237);
-  animation: nameStart 2s linear 0s normal;
+  font-size: 6em;
+  font-weight: bold;
+  color: #fff;
 }
-@keyframes nameStart {
-  0% {
-    transform: translate(0px, -400px);
-  }
-  80% {
-    transform: translate(0px, -400px);
-  }
-  90% {
-    transform: translate(0px, 40px);
-  }
+.main-parg h1 span {
+  display: inline-block;
+  padding: 6px 55px 0 0;
+  transform: rotate(-60deg);
+  background: linear-gradient(
+    to right,
+    #ee05ffb6,
+    #ff0066e2,
+    rgba(254, 1, 1, 0.811)
+  );
+  margin-bottom: 23px;
 }
-.main-parg h3 {
-  font-size: 50px;
-  color: rgb(31, 169, 207);
+.main-parg h1::before {
+  content: "\003C";
+  color: #454444;
 }
-.main-parg h5 {
-  font-size: 40px;
-  color: #03242e;
-  text-shadow: -1px 0 rgb(248, 244, 244), 0 1px rgb(245, 243, 243),
-    1px 0 rgb(248, 244, 244), 0 -1px rgb(245, 240, 240);
+.main-parg h1::after {
+  content: "\003E";
+  color: #454444;
 }
 .main-parg p {
-  font-size: 25px;
-  justify-content: center;
-  color: coral;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.2em;
+  margin: 0 auto;
+  color: #41dd16;
+  width: 50%;
 }
 .social-icons a {
   padding: 10px;
@@ -139,7 +155,7 @@ export default {
 .btn-contact {
   font-size: 20px;
   padding: 20px 50px;
-  background-color: #81a9b5!important;
+  background-color: #81a9b5 !important;
   color: #fff !important;
 }
 .btn-scroll-top {
@@ -149,13 +165,114 @@ export default {
   right: 5px;
   border-radius: 10px;
 }
-.main-img {
-  display: flex;
-  align-items: center;
-
+.laptop-block {
+  width: 60%;
+  margin: 0 auto;
+  width: 400px;
 }
-
-
+.laptop-screen {
+  background-color: #fff;
+  border: 15px solid #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.laptop-screen img {
+  width: 100%;
+}
+.laptop-screen .text-screen {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+  color: rgb(34, 32, 32);
+}
+i.hand-wave-emoji {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url(src/assets/img/wave-hand-emogji.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.laptop-screen .top-screen {
+  overflow: auto;
+}
+.laptop-screen .top-screen * {
+  height: 10px;
+  background-color: #dddddd;
+  width: 40px;
+  float: right;
+  margin: 10px;
+  border-radius: 2px;
+}
+.laptop-screen .top-screen :first-child {
+  float: left;
+  width: 50px;
+}
+.laptop-screen .bottom-screen * {
+  height: 5px;
+  background-color: #dddddd;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.laptop-screen .bottom-screen :last-child {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.laptop-keyboard {
+  transform: translateX(22px);
+}
+.laptop-keyboard img {
+  width: 100%;
+  height: 120px;
+  transform: skew(20deg);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 10px solid #000;
+}
+.right-block {
+  position: absolute;
+  width: 300px;
+  overflow: auto;
+  border: 4px solid #000;
+  border-radius: 5%;
+  background-color: #323232;
+  padding: 10px;
+  top: 35%;
+  left: 90%;
+}
+.right-block h2 {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+.right-block h3 {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+}
+.right-block-p {
+  color: #41dd16;
+  background-color: #3d3d3d;
+  padding: 5px;
+}
+.right-block .right-block-circles span {
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+  width: 7px;
+  height: 7px;
+}
+.right-block .right-block-circles span:nth-child(1) {
+  background-color: red;
+}
+.right-block .right-block-circles span:nth-child(2) {
+  background-color: yellow;
+}
+.right-block .right-block-circles span:nth-child(3) {
+  background-color: green;
+}
 @media (max-width: 850px) {
   .main-page {
     margin: 5px;
@@ -170,7 +287,6 @@ export default {
     width: 100%;
     text-shadow: 1px solid black;
     padding: 0;
-
   }
   .main-parg h1 {
     font-size: 4em;
@@ -191,8 +307,8 @@ export default {
     display: block;
     text-align: center;
   }
-  .main-img img{
-      width: 100%;
+  .main-img img {
+    width: 100%;
   }
   @media (max-width: 576px) {
     .main-page {
@@ -201,12 +317,10 @@ export default {
     }
   }
 
-   @media (max-width: 360px) {
+  @media (max-width: 360px) {
     .main-page {
       padding-top: 10em;
     }
-    
   }
-  
 }
 </style>
