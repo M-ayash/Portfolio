@@ -17,7 +17,7 @@
         </div>
       </nav>
       <div class="main-parg">
-        <h1><span></span>Developer</h1>
+        <h1><span></span>Developer </h1>
         <p>
           // I am a web developer with frontend experience Knowledge of HTML,
           CSS, Javascript, PHP, Wordpress and Vuejs. //
@@ -92,11 +92,11 @@ export default {
   border-radius: 2%;
   background-image: radial-gradient(
     farthest-corner,
-    #12d2e4,
-    #0929ca,
-    #3f3f5d,
-    #303040,
-    #333334
+    #1e7a83,
+    #1a286f,
+    #383855,
+    #292935,
+    #232323
   );
   padding-bottom: 4em;
   position: relative;
@@ -133,11 +133,11 @@ export default {
 }
 .main-parg h1::before {
   content: "\003C";
-  color: #454444;
+  color: #1c1919;
 }
 .main-parg h1::after {
   content: "\003E";
-  color: #454444;
+  color: #1c1919;
 }
 .main-parg p {
   font-size: 1.2em;
@@ -265,13 +265,13 @@ i.hand-wave-emoji {
   height: 7px;
 }
 .right-block .right-block-circles span:nth-child(1) {
-  background-color: red;
+  background-color: rgb(255, 41, 41);
 }
 .right-block .right-block-circles span:nth-child(2) {
-  background-color: yellow;
+  background-color: rgb(244, 236, 30);
 }
 .right-block .right-block-circles span:nth-child(3) {
-  background-color: green;
+  background-color: rgb(86, 255, 19);
 }
 @media (max-width: 850px) {
   .main-page {
@@ -282,6 +282,7 @@ i.hand-wave-emoji {
   .main-content {
     display: block;
     flex-direction: column;
+    width: 90%;
   }
   .main-parg {
     width: 100%;
@@ -310,6 +311,15 @@ i.hand-wave-emoji {
   .main-img img {
     width: 100%;
   }
+  .right-block{
+    position: static;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .laptop-block{
+    width: 80%;
+  }
+}
   @media (max-width: 576px) {
     .main-page {
       padding: 20px;
@@ -322,5 +332,5 @@ i.hand-wave-emoji {
       padding-top: 10em;
     }
   }
-}
+
 </style>

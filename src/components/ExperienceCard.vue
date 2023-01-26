@@ -19,13 +19,15 @@ export default {
 </script>
 <style>
 .experience-card {
-  background-color: rgba(14, 13, 13, 0.647);
+  position: relative;
+  background-color: rgba(246, 245, 237, 0.947);
+  border: 15px solid #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   max-width: 28%;
   margin: 1em;
-  padding: 1em;
+  padding: 1em 1em 7em 1em;
   cursor: pointer;
-  border-radius: 10%;
-
 }
 .experience-card:hover {
   transform: scale(1.1);
@@ -42,13 +44,20 @@ export default {
   width: 100%;
   border-radius: 10%;
 }
+.experience-info{
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  left: 0;
+  width: 100%;
+}
 .experience-category {
   font-size: 20px;
-  color: coral;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #000;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   text-align: center;
   padding-top: 10px;
-  
+
 }
 .experience-category small {
   display: block;
@@ -58,6 +67,7 @@ export default {
   .experience-card{
     max-width: 30%;
   }
+
   
 }
 @media (max-width: 576px) {

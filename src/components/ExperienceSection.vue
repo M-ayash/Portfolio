@@ -1,6 +1,6 @@
 <template>
   <section class="experience" id="my-skills" ref="my-skills">
-    <div class="experience-title"><span>My skills</span></div>
+    <div class="experience-title"><span>My Projects</span></div>
 
     <div class="experience-content">
       <experience-card cardText="Form Builder" @click="goto('https://moutaz-bakier.github.io/')">
@@ -58,7 +58,7 @@ export default {
 }
 .experience-content {
   display: flex;
-  margin: 20px;
+  margin: 20px 20px 0;
   flex-wrap: wrap;
   justify-content: space-around;
 }

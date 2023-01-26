@@ -55,7 +55,7 @@ export default {
   padding: 20px;
 }
 .about-main p {
-  font-size: 1.2em;
+  font-size: 1.4em;
    text-align: justify;
    padding: 20px;
 }

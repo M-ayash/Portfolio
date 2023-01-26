@@ -19,6 +19,8 @@ export default {};
 .contact {
   font-weight: bold;
   background-color: rgba(245, 244, 237, 0.358);
+  min-height: 100vh;
+  margin-top: -10px;
 }
 .contact-title {
   width: 25%;
