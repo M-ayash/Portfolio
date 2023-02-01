@@ -60,14 +60,14 @@ export default {
   position: relative;
 }
 .page-title {
-  padding: 2em 4em;
+  padding: 2em 0;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .page-title h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
   color: #fff;
 }
@@ -134,6 +134,18 @@ export default {
   .page-title h1 span {
     padding: 4px 24px 0 0;
     margin-bottom: 9px;
+  }
+}
+@media print {
+  #app{
+    height: 100vh;
+    background-color: #fff;
+  }
+  .main,.main .container{
+    background: #fff;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 </style>

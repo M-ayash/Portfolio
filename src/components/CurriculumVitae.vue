@@ -235,7 +235,7 @@
 }
 @media print {
   .cv {
-    min-height: 100%;
+    min-height: 90%;
     max-width: 100%;
   }
   .cv-img img {

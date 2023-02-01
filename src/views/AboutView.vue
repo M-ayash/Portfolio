@@ -1,10 +1,11 @@
 <template>
   <div class="about">
     <div class="about-main">
-      <div class="page-title">
-        <h1><span></span>About me</h1>
-    </div>
+      
       <div v-if="!show">
+        <div class="page-title">
+        <h1><span></span>About me</h1>
+      </div>
         <h2>Over mij</h2>
         <p>
           Als front-end developer ben ik verantwoordelijk voor het design en de
@@ -71,8 +72,8 @@ export default {
 }
 .show-cv {
   position: fixed;
-  top: 10%;
-  left: 90%;
+  top: 20%;
+  left: 70%;
   background-color: #0c010115;
 }
 .about-bg {
@@ -94,6 +95,10 @@ export default {
   @media print {
     .close-cv{
       display: none !important;
+      visibility: hidden;
+    }
+    .close-cv .hidden-cv{
+      visibility: hidden;
     }
   }
 }
