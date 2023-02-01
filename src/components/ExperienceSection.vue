@@ -27,7 +27,7 @@
         <img src="@/assets/img/wittich.png" />
       </experience-card>
       <experience-card cardText="portfolio wordpress" @click="goto('https://www.mayash.wpconcept.work/')">
-        <img src="@/assets/img/portofolio wordpress.png" />
+        <img src="@/assets/img/portofolio_wordpress.png" />
       </experience-card>
       
     </div>

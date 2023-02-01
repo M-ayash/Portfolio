@@ -27,7 +27,7 @@
       </div>
       <div class="laptop-block">
         <div class="laptop-screen">
-          <img src="src\assets\img\code1.png" alt="code" />
+          <img src="@/assets/img/code1.png" alt="code" />
           <div class="top-screen"><span></span><span></span><span></span></div>
           <p class="text-screen">
             <i class="hand-wave-emoji"></i> I am Mohammad Ayash
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="laptop-keyboard">
-          <img src="src\assets\img\laptop-keyboard.jpg" alt="keyboard" />
+          <img src="@/assets/img/laptop-keyboard.jpg" alt="keyboard" />
         </div>
       </div>
       <div>
