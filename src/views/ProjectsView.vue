@@ -7,7 +7,7 @@
 import ExperienceSection from "../components/ExperienceSection.vue";
 
 export default {
-  name: "Home",
+  name: "Projects",
   components: { ExperienceSection },
   
 };

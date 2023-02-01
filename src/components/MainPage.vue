@@ -1,22 +1,8 @@
 <template>
   <section class="main-page" id="main-page">
     <div class="main-content">
-      <nav id="nav-menu" class="nav-menu">
-        <div class="header-menu d-print-none">
-          <ul class="nav nav-tabs justify-content-end">
-            <li class="nav-item">
-              <router-link to="/projects" class="nav-link">Projects</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Contact</router-link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="main-parg">
+      
+      <div class="page-title">
         <h1><span></span>Developer </h1>
         <p>
           // I am a web developer with frontend experience Knowledge of HTML,
@@ -76,7 +62,9 @@ export default {
         behavior: "smooth",
       });
     },
+    //
   },
+ 
 };
 </script>
 <style>
@@ -85,66 +73,8 @@ export default {
   min-width: 100%;
   padding-top: 30px;
 }
-.main-content {
-  width: 70%;
-  margin: 0 0 0 20px;
-  border: 4px solid #000;
-  border-radius: 2%;
-  background-image: radial-gradient(
-    farthest-corner,
-    #1e7a83,
-    #1a286f,
-    #383855,
-    #292935,
-    #232323
-  );
-  padding-bottom: 4em;
-  position: relative;
-}
-.nav-tabs{
-  border: none !important;
-}
-.main-content .nav-tabs li a{
-  color: #fff;
-}
-.main-parg {
-  padding: 2em 4em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 50px;
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-}
-.main-parg h1 {
-  font-size: 6em;
-  font-weight: bold;
-  color: #fff;
-}
-.main-parg h1 span {
-  display: inline-block;
-  padding: 6px 55px 0 0;
-  transform: rotate(-60deg);
-  background: linear-gradient(
-    to right,
-    #ee05ffb6,
-    #ff0066e2,
-    rgba(254, 1, 1, 0.811)
-  );
-  margin-bottom: 23px;
-}
-.main-parg h1::before {
-  content: "\003C";
-  color: #1c1919;
-}
-.main-parg h1::after {
-  content: "\003E";
-  color: #1c1919;
-}
-.main-parg p {
-  font-size: 1.2em;
-  margin: 0 auto;
-  color: #41dd16;
-  width: 50%;
-}
+
+
 .social-icons a {
   padding: 10px;
   text-decoration: none;
@@ -265,13 +195,13 @@ i.hand-wave-emoji {
   height: 7px;
 }
 .right-block .right-block-circles span:nth-child(1) {
-  background-color: rgb(255, 41, 41);
+  background-color: #ff2929;
 }
 .right-block .right-block-circles span:nth-child(2) {
-  background-color: rgb(244, 236, 30);
+  background-color: #f4ec1e;
 }
 .right-block .right-block-circles span:nth-child(3) {
-  background-color: rgb(86, 255, 19);
+  background-color: #56ff13;
 }
 @media (max-width: 850px) {
   .main-page {
@@ -284,23 +214,7 @@ i.hand-wave-emoji {
     flex-direction: column;
     width: 90%;
   }
-  .main-parg {
-    width: 100%;
-    text-shadow: 1px solid black;
-    padding: 0;
-  }
-  .main-parg h1 {
-    font-size: 4em;
-  }
-  .main-parg h3 {
-    font-size: 3em;
-  }
-  .main-parg h5 {
-    font-size: 1.5em;
-  }
-  .main-parg p {
-    font-size: 1.5em;
-  }
+  
   .btn-contact {
     font-size: 20px;
   }

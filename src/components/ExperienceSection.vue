@@ -1,6 +1,8 @@
 <template>
   <section class="experience" id="my-skills" ref="my-skills">
-    <div class="experience-title"><span>My Projects</span></div>
+    <div class="page-title">
+        <h1><span></span>Projects</h1>
+    </div>
 
     <div class="experience-content">
       <experience-card cardText="Form Builder" @click="goto('https://moutaz-bakier.github.io/')">
@@ -9,20 +11,23 @@
       <experience-card cardText="weather App"  @click="this.$router.push('/weather')">
          <img src="@/assets/img/weatherApp.jpg" />
       </experience-card>
-      <experience-card cardText="portfolio met Vuejs (link to github)" @click="goto('https://github.com/M-ayash/portfolio')">
+      <experience-card cardText="portfolio github code" @click="goto('https://github.com/M-ayash/portfolio')">
          <img src="@/assets/img/portolio_wit_Vuejs.jpg" />
       </experience-card>
       <experience-card cardText="Wordpress website" @click="goto('https://www.klusbedrijf-direct.nl/')" >
          <img src="@/assets/img/klusbedrijf-direct.png" />
-      </experience-card>
-      <experience-card cardText="WordPress demo" @click="goto('https://wgv.one-sw.nl/')">
-        <img src="@/assets/img/wgv.png" />
       </experience-card>
       <experience-card cardText="WordPress demo" @click="goto('https://xandra.one-sw.nl/')">
         <img src="@/assets/img/xandra.png" />
       </experience-card>
       <experience-card cardText="WordPress demo" @click="goto('https://rentem.one-sw.nl/')">
         <img src="@/assets/img/rentem.png" />
+      </experience-card>
+      <experience-card cardText="WordPress demo" @click="goto('https://wittich.one-sw.nl/')">
+        <img src="@/assets/img/wittich.png" />
+      </experience-card>
+      <experience-card cardText="portfolio wordpress" @click="goto('https://www.mayash.wpconcept.work/')">
+        <img src="@/assets/img/portofolio wordpress.png" />
       </experience-card>
       
     </div>
@@ -62,6 +67,5 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 
 </style>

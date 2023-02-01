@@ -1,40 +1,53 @@
 <template>
   <section class="contact" id="contact">
-    <div class="contact-content m-2">
+    <div class="page-title">
+        <h1><span></span>Contact</h1>
+    </div>
+    <div class="contact-content ">
       <h2 class="contact-title">Contact me with</h2>
       <div class="icon">
         <i class="fas fa-envelope"></i>
       </div>
       <div class="info">
         <h3>Email:</h3>
-        <p>Mohammadhd1987@gmail.com</p>
+        <p><a href="mailto:Mohammadhd1987@gmail.com">Mohammadhd1987@gmail.com</a> </p>
       </div>
+      <div class="contact-content-footer">
+      <i class="fa-solid fa-power-off"></i>
+    </div>
     </div>
   </section>
 </template>
 <script>
-export default {};
+export default {
+};
 </script>
 <style>
 .contact {
   font-weight: bold;
-  background-color: rgba(245, 244, 237, 0.358);
   min-height: 100vh;
   margin-top: -10px;
+  
 }
 .contact-title {
-  width: 25%;
   margin: 20px;
   padding: 20px 0px;
-  background-color: rgb(4, 4, 75);
-  font-size: large;
+  font-size: 2em;
   font-weight: bold;
-  color: rgb(237, 239, 245);
+ 
   text-align: center;
   border-radius: 5%;
 }
 .contact-content {
-  margin: 20px;
+  background-color: rgba(246, 245, 237, 0.947);
+    border: 15px solid #000;
+    border-bottom-width: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    margin: auto;
 }
 .contact .icon {
   color: rgb(35, 67, 227);
@@ -49,6 +62,12 @@ export default {};
   font-size: 1.5em;
   padding: 10px;
 }
+.contact-content-footer {
+    position: absolute;
+    bottom: -19px;
+    left: 49%;
+    color: #f7f4f4;
+  }
 @media (max-width: 768px) {
   .contact {
     text-align: center;

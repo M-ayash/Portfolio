@@ -33,7 +33,6 @@
 .footer{
   background-color: rgb(57, 90, 135);
   min-height: 10vh;
- 
 }
 .footer-content {
   display: flex;

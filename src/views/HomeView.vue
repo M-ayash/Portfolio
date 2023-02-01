@@ -1,15 +1,5 @@
 <template>
-  <div class="home">
-    <!-- <img src="@/assets/img/sky8.jpg" alt="" class="background-img" /> -->
-    
-    <!-- <div class="moon-img">
-      <img src="../assets/img/moon1.png" alt="moon" class="rounded-circle" />
-    </div> -->
-
-    
-    <!-- <div id="star0" class="star"></div>-->
     <MainPage />
-  </div>
 </template>
 <script>
 import ExperienceSection from "../components/ExperienceSection.vue";
@@ -19,13 +9,6 @@ export default {
   name: "Home",
   components: { ExperienceSection, ContactSection, MainPage },
   methods: {
-    addStar(n) {
-      let star = document.getElementById("star0");
-      for (let i = 0; i < n; i++) {
-        let st = star.cloneNode(true);
-        st.style.top = `${Math.floor(Math.random() * 100)}px`;
-      }
-    },
   },
 };
 </script>

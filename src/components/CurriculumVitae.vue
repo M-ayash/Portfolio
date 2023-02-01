@@ -70,12 +70,23 @@
       <div class="work-exper">
         <h2>WERK ERVARING</h2>
         <div>
-          <h3>front-end developer</h3>
-          <p><span>saleswizard </span>|<span> 2022-heden</span></p>
+          <h3>WordPress en Backend developer</h3>
+          <p><span>ICTMaatwerk </span>|<span> 2023-heden</span></p>
           <ul>
             <li>
               Website gemaakt en beheerd met<br />
-               WordPress en PHP
+              WordPress,Javascript,PHP en Vuejs
+            </li>
+            <li>Wep Applicaties ontwikkeld</li>
+          </ul>
+        </div>
+        <div>
+          <h3>WordPress frontend developer</h3>
+          <p><span>saleswizard </span>|<span> 2022-2023</span></p>
+          <ul>
+            <li>
+              Website gemaakt en beheerd met<br />
+               WordPress, PHP en JavaScript
             </li>
             <li>wordpress  ontwikkeld</li>
           </ul>
@@ -86,7 +97,7 @@
           <ul>
             <li>
               Website gemaakt en beheerd met<br />
-              HTML,CSS,Javascript,php,Vuejs
+              HTML,CSS,Javascript,Bootstrap,php,Vuejs
             </li>
             <li>Wep Applicaties ontwikkeld</li>
           </ul>

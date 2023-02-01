@@ -1,5 +1,9 @@
 <template>
-  <div class="weatherApp">
+  <div >
+    <div class="page-title">
+        <h1><span></span> Weather</h1>
+    </div>
+    <div class="weatherApp">
     <div class="weather pt-3">
       <div class="weather-header">
         <input
@@ -12,14 +16,14 @@
         <button
           type="button"
           @click="getCityWeather(cityName)"
-          class="btn bg-light p-2"
+          class="btn bg-light "
         >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <button
           type="button"
           @click="getLocationWeather()"
-          class="btn bg-light p-2 m-2"
+          class="btn bg-light"
         >
           <i class="fas fa-map-marker-alt"></i>
         </button>
@@ -54,10 +58,11 @@
       <div v-else class="error-msg">{{ errorMsg }}</div>
     </div>
   </div>
+</div>
 </template>
 <script>
 export default {
-  name: "weather",
+  name: "Weather",
   data() {
     return {
       weather: {},
@@ -168,8 +173,10 @@ export default {
   background-position: center;
 }
 .weather {
+  margin-top: 20px;
   flex-direction: column;
-  min-height: 100vh;
+  border-radius: 5px;
+  border: 3px solid #66a8ea58;;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3),
@@ -202,7 +209,10 @@ export default {
 .weather-header input:focus {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
+.weather .btn {
+  margin: 5px;
+  padding: 10px 15px;
+}
 .weather-body {
   flex: 1 1 100%;
   display: flex;

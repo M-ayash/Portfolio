@@ -1,6 +1,9 @@
 <template>
   <div class="about">
     <div class="about-main">
+      <div class="page-title">
+        <h1><span></span>About me</h1>
+    </div>
       <div v-if="!show">
         <h2>Over mij</h2>
         <p>
@@ -11,7 +14,8 @@
           WordPress .
         </p>
       </div>
-      <button
+      <div class="close-cv">
+        <button
         type="button"
         class="btn hidden-cv"
         :class="{ 'show-cv': show }"
@@ -19,6 +23,8 @@
       >
         {{ show ? "&#9747;" : "Mijn CV" }}
       </button>
+      </div>
+      
     </div>
     <!-- <img src="../assets/img/sky4.jpg" alt="" class="about-bg" /> -->
     <CurriculumVitae v-if="show" />
@@ -86,8 +92,8 @@ export default {
   left: 80%;
   }
   @media print {
-    .show-cv ,.show-cv{
-      display: none;
+    .close-cv{
+      display: none !important;
     }
   }
 }
