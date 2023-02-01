@@ -153,7 +153,7 @@
 }
 /*/////////////*/
 .cv-left {
-  min-height: 100vh;
+  min-height: 95vh;
   width: 40%;
   float: left;
   background-color: rgb(57, 90, 135);
@@ -232,6 +232,12 @@
     padding-top:10em;
     width: 100%;
   }
+}
+@media (max-width: 480px) {
+  .cv-left,.cv-right{
+    width: 100%;
+  }
+
 }
 @media print {
   .cv {

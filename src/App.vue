@@ -127,9 +127,13 @@ export default {
     margin-bottom: 9px;
   }
 }
+
   @media (max-width: 360px) {
   #app {
     font: 0.5em sans-serif;
+  }
+  .page-title{
+    margin-top: 20px;
   }
   .page-title h1 span {
     padding: 4px 24px 0 0;

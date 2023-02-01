@@ -1,7 +1,7 @@
 <template>
   <section class="contact" id="contact">
     <div class="page-title">
-        <h1><span></span>Contact</h1>
+        <h1><span></span> Contact </h1>
     </div>
     <div class="contact-content ">
       <h2 class="contact-title">Contact me with</h2>
@@ -75,6 +75,9 @@ export default {
   .info p{
     font-size: 2em;
     padding: 2px;
+  }
+  .contact-content{
+    width: 100%;
   }
   
 }
