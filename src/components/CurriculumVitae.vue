@@ -153,11 +153,11 @@
 }
 /*/////////////*/
 .cv-left {
-  min-height: 94%;
   width: 40%;
   float: left;
   background-color: rgb(57, 90, 135);
   color: #fff;
+  padding-bottom: 214px;
 }
 .cv-img {
   width: 100%;
@@ -236,6 +236,9 @@
 @media (max-width: 480px) {
   .cv-left,.cv-right{
     width: 100%;
+  }
+  .cv-left{
+    padding-bottom: 20px;
   }
   .skills ul li{
     margin-bottom: 5px;

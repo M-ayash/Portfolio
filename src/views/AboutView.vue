@@ -100,6 +100,9 @@ export default {
     .close-cv .hidden-cv{
       visibility: hidden;
     }
+    .show-cv{
+      background-color: transparent;
+    }
   }
 }
 </style>
