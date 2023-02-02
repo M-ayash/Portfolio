@@ -94,5 +94,9 @@
     .experience-category {
       font-size: 0.9em;
     }
+    .experience-footer {
+      bottom: -16px;
+    }
+
   }
 </style>

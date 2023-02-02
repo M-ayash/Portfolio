@@ -153,7 +153,7 @@
 }
 /*/////////////*/
 .cv-left {
-  min-height: 95vh;
+  min-height: 94%;
   width: 40%;
   float: left;
   background-color: rgb(57, 90, 135);
@@ -171,7 +171,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 1.4em;
   text-align: justify;
 }
 .activite,
@@ -237,7 +237,9 @@
   .cv-left,.cv-right{
     width: 100%;
   }
-
+  .skills ul li{
+    margin-bottom: 5px;
+  }
 }
 @media print {
   .cv {

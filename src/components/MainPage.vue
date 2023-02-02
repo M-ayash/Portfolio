@@ -243,7 +243,10 @@ i.hand-wave-emoji {
 
   @media (max-width: 360px) {
     .main-page {
-      padding-top: 10em;
+      padding: 10em 0;
+    }
+    .right-block,.laptop-block{
+      width: 100%;
     }
   }
 

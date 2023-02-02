@@ -47,7 +47,7 @@ export default {
   width: 75%;
   margin: 0 0 0 20px;
   border: 4px solid #000;
-  border-radius: 2%;
+  border-radius: 20px;
   background-image: radial-gradient(
     farthest-corner,
     #1e7a83,
@@ -114,7 +114,7 @@ export default {
     font-size: 3em;
   }
   .page-title h3 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
   .page-title h5 {
     font-size: 1.5em;
@@ -138,6 +138,10 @@ export default {
   .page-title h1 span {
     padding: 4px 24px 0 0;
     margin-bottom: 9px;
+  }
+  .main .container{
+    margin: 24px 0px;
+    width: 100%;
   }
 }
 @media print {

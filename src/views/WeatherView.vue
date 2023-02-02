@@ -4,7 +4,7 @@
         <h1><span></span> Weather</h1>
     </div>
     <div class="weatherApp">
-    <div class="weather pt-3">
+    <div class="weather pt-3 pb-3">
       <div class="weather-header">
         <input
           type="search"
@@ -173,6 +173,7 @@ export default {
   background-position: center;
 }
 .weather {
+  font-size: 0.8em;
   margin-top: 20px;
   flex-direction: column;
   border-radius: 5px;
@@ -223,20 +224,20 @@ export default {
 
 .location .city {
   color: #fff;
-  font-size: 32px;
+  font-size: 4.5em;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
 .location .date {
   color: #fff;
-  font-size: 16px;
+  font-size: 2.5em;
 }
 
 .current .temp {
   color: #fff;
-  font-size: 20px;
-  font-weight: 90;
+  font-size: 4em;
+  font-weight: 4em;
   margin: 30px 0px;
   text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
 }
@@ -247,7 +248,7 @@ export default {
 
 .current .weather-status {
   color: #fff;
-  font-size: 32px;
+  font-size: 3em;
   font-weight: 70;
   font-style: italic;
   margin-bottom: 15px;
@@ -258,13 +259,18 @@ export default {
 .weather-humidity,
 .weather-wind {
   color: #fff;
-  font-size: 24px;
+  font-size: 3em;
   font-weight: 500;
   text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
 }
 .error-msg {
-  font-size: 15px;
+  font-size: 1.5em;
   color: red;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .weather{
+    font-size: 0.5em;
+  }
+  }
 </style>

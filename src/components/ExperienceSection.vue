@@ -67,5 +67,9 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+@media (max-width: 360px) {
+  .experience-content{
+    margin: 20px 0 0;
+  }
+}
 </style>
