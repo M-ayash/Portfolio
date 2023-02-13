@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="right-block">
-        <h2>Hi, I am Mohammad</h2>
+        <h2>  Hi, I am Mohammad <i class="hand-wave-emoji"></i></h2>
         <h3>Front-end Developer</h3>
         <div class="right-block-p">
           <div class="right-block-circles">
@@ -30,7 +30,8 @@
           <img src="@/assets/img/code1.png" alt="code" />
           <div class="top-screen"><span></span><span></span><span></span></div>
           <p class="text-screen">
-            <i class="hand-wave-emoji"></i> I am Mohammad Ayash
+            <i class="hand-wave-emoji"></i> I am <br/>
+            Mohammad Ayash
           </p>
           <div class="bottom-screen">
             <p></p>
@@ -120,7 +121,7 @@ i.hand-wave-emoji {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background: url(src/assets/img/wave-hand-emogji.png) no-repeat;
+  background: url(/src/assets/img/wave-hand-emogji.png) no-repeat;
   background-position: center;
   background-size: cover;
 }

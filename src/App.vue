@@ -111,7 +111,7 @@ export default {
     padding: 0;
   }
   .page-title h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .page-title h3 {
     font-size: 2.8em;
@@ -123,12 +123,12 @@ export default {
     font-size: 1.5em;
   }
   .page-title h1 span {
-    padding: 5px 38px 0 0;
-    margin-bottom: 9px;
+    padding: 5px 33px 0 0;
+    margin-bottom: 8px;
   }
 }
 
-  @media (max-width: 360px) {
+  @media (max-width: 480px) {
   #app {
     font: 0.5em sans-serif;
   }
@@ -136,8 +136,8 @@ export default {
     margin-top: 20px;
   }
   .page-title h1 span {
-    padding: 4px 24px 0 0;
-    margin-bottom: 9px;
+    padding: 3px 17px 0 0;
+    margin-bottom: 3px;
   }
   .main .container{
     margin: 24px 0px;
