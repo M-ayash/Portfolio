@@ -8,8 +8,7 @@
       <div class="cv-img">
         <img src="@/assets/img/main-img.jpg" alt="Mohammad Ayash" class="" />
         <p class="description p-3">
-          Ik ben een webontwikkelaar met frontend ervaring. Kennis van HTML,
-          CSS, Javascript, Bootstrap, Wordpress Vuejs python en Java .
+          Enthousiaste ICT specialist met een jaar ervaring in front-end ontwikkeling (WordPress en VueJs) en Hardware .opzoek naar een leuke baan waarin ik verder kan ontwikkelen samen met andere ICT collega's .
         </p>
       </div>
       <hr />
@@ -23,10 +22,33 @@
         </ul>
       </div>
       <div class="skills">
+        <h3>Talen</h3>
+        <ul>
+          <li>
+            <span>Engels</span>
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 85%">85%</span>
+            </div>
+          </li>
+          <li>
+            Nederlands
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 75%">75%</span>
+            </div>
+          </li>
+          <li>
+           Arabich
+            <div class="progress">
+              <span class="progress-bar bg-info" style="width: 99%">99%</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="skills">
         <h3>VAARDIGHEDEN</h3>
         <ul>
           <li>
-            <span>front-end</span>
+            <span>Frontend</span>
             <div class="progress">
               <span class="progress-bar bg-info" style="width: 80%">80%</span>
             </div>
@@ -34,17 +56,23 @@
           <li>
             VueJs
             <div class="progress">
+              <span class="progress-bar bg-info" style="width: 75%">75%</span>
+            </div>
+          </li>
+          <li>
+            <span>Backend</span>
+            <div class="progress">
               <span class="progress-bar bg-info" style="width: 70%">70%</span>
             </div>
           </li>
           <li>
-            wordpress
+            Wordpress
             <div class="progress">
               <span class="progress-bar bg-info" style="width: 80%">80%</span>
             </div>
           </li>
           <li>
-            software developer
+            Hardware
             <div class="progress">
               <span class="progress-bar bg-info" style="width: 60%">60%</span>
             </div>
@@ -54,7 +82,7 @@
     </section>
     <!---->
     <section class="cv-right p-3">
-      <h3 class="job-name">Front-end Developer</h3>
+      <h3 class="job-name">ICT specialist</h3>
       <div class="personalia-details">
         <div class="email">
           <p><i class="fa-solid fa-envelope"></i> mohammadhd1987@gmail.com</p>
@@ -70,14 +98,15 @@
       <div class="work-exper">
         <h2>WERK ERVARING</h2>
         <div>
-          <h3>WordPress en Backend developer</h3>
+          <h3>Hardware en Backend developer</h3>
           <p><span>ICTMaatwerk </span>|<span> 2023-heden</span></p>
           <ul>
+            <li>Hardware medeWerker reparatie en controleren</li>
             <li>
               Website gemaakt en beheerd met<br />
-              WordPress,Javascript,PHP en Vuejs
+              Django en Vuejs
             </li>
-            <li>Wep Applicaties ontwikkeld</li>
+            
           </ul>
         </div>
         <div>
