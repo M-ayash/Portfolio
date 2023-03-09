@@ -27,7 +27,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 28%;
-    max-height: 250px;
+    max-height: 260px;
     margin: 1em;
     padding: 1em 1em 7em 1em;
     cursor: pointer;
@@ -38,6 +38,7 @@
   }
   .experience-card:hover img{
     transform: scale(1.1);
+    
   }
   .experience-card a {
     text-decoration: none;
@@ -53,6 +54,7 @@
     width: 100%;
     height: 170px;
     border-radius: 5%;
+    pointer-events: none;
   }
   .experience-info {
     position: absolute;

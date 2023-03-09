@@ -21,23 +21,23 @@
     <div class="contact-form">
       <form action="">
         <div>
-            <h2>contact me with:</h2>
+            <h2>Contact me with:</h2>
           </div>
         <div class="row">
           <div class="input-contact col-md-6">
-            <input type="text" name="fname" >
+            <input type="text" name="fname"  class="form-control" placeholder="First name..*:">
+          </div>
+          <div class="input-contact col-md-6" >
+            <input type="text" name="lname"  class="form-control" placeholder="Last name..*:">
           </div>
           <div class="input-contact col-md-6">
-            <input type="text" name="lname" >
+            <input type="mail" name="email"  class="form-control" placeholder="Email..*:">
           </div>
           <div class="input-contact col-md-6">
-            <input type="mail" name="email" >
-          </div>
-          <div class="input-contact col-md-6">
-            <input type="tel" name="tele" >
+            <input type="tel" name="tele"  class="form-control" placeholder="Telephone:">
           </div>
           <div class="input-contact col-md-12">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="10" rows="10"  class="form-control" placeholder="Description:"></textarea>
           </div>
         </div>
       </form>
@@ -92,6 +92,16 @@
     left: 49%;
     color: #f7f4f4;
   }
+  form{
+    margin-top: 50px;
+  }
+ form h2{
+    color:#fff;
+  }
+  form .input-contact{
+     padding: 10px;
+  }
+    
   @media (max-width: 768px) {
     .contact {
       text-align: center;
